@@ -53,10 +53,14 @@ code-body: yes
 </$list>
 \end
 
-\define tabs(tabsList,default,state:"$:/state/tab",class,template,buttonTemplate,retain,actions,explicitState)
+\define tabs(tabsList,default,state:"$:/state/tab",class,template,buttonTemplate,retain,actions,explicitState,defaultFilter)
 \whitespace trim
 <$qualify title=<<__state__>> name="qualifiedState">
-	<$let tabsState={{{ [<__explicitState__>minlength[1]] ~[<qualifiedState>] }}}>
+	<$let
+		__defaultFilter__={{{ [<__defaultFilter__>minlength[1]] ~[{$:/config/TabsMacro/defaultFilter}] }}}
+		__default__={{{ [<__default__>is[tiddler]] ~[subfilter<__tabsList__>subfilter<__defaultFilter__>] }}}
+		tabsState={{{ [<__explicitState__>minlength[1]] ~[<qualifiedState>] }}}
+	>
 		<div class={{{ [[tc-tab-set]addsuffix[ ]addsuffix<__class__>] }}}>
 			<div class={{{ [[tc-tab-buttons]addsuffix[ ]addsuffix<__class__>] }}}>
 				<<tabs-tab-list>>
