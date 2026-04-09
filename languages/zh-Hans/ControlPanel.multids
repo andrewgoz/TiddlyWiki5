@@ -5,7 +5,8 @@ Advanced/Hint: 关于此 TiddlyWiki 的内部信息
 Appearance/Caption: 外观
 Appearance/Hint: 定制您的 TiddlyWiki 外观。
 Basics/AnimDuration/Prompt: 动画持续时间
-Basics/AutoFocus/Prompt: 编辑条目时的默认自动停留字段
+Basics/AutoFocus/Prompt: 编辑新条目时，默认停留的字段
+Basics/AutoFocusEdit/Prompt: 编辑现有条目时，默认停留的字段
 Basics/Caption: 基础
 Basics/DefaultTiddlers/BottomHint: 标题含空白时请使用 &#91;&#91;双中括弧&#93;&#93;，或者您可用 {{保留开启中的条目顺序||$:/snippets/retain-story-ordering-button}}
 Basics/DefaultTiddlers/Prompt: 首页
@@ -148,7 +149,7 @@ Settings/AutoSave/Disabled/Description: 不要自动保存变更
 Settings/AutoSave/Enabled/Description: 自动保存变更
 Settings/AutoSave/Hint: 当使用支持的保存模块时，在编辑期间尝试自动保存变更
 Settings/CamelCase/Caption: 驼峰式维基链接
-Settings/CamelCase/Hint: 您可以全域禁用驼峰式短语自动链接。须保存后重新加载，方才生效。
+Settings/CamelCase/Hint: 须保存后重新加载，方才生效。
 Settings/CamelCase/Description: 启用自动驼峰式链接
 Settings/Caption: 设置
 Settings/DefaultSidebarTab/Caption: 默认侧边栏页签

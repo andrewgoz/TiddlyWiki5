@@ -23,6 +23,7 @@ ActionWidgets are used within triggering widgets such as the ButtonWidget.
 
 The <<.wid action-log>> widget is invisible. Any content within it is ignored.
 
+<<.from-version "5.4.0">> Any [[multi-valued variables|Multi-Valued Variables]] or attributes are logged as a list of values.
 
 |!Attribute |!Description |
 |<<.attr $$filter>>|(Optional) All variables whose name matches the [[Filter Expression]] will be logged |
